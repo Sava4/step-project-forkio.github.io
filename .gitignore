@@ -20,6 +20,8 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
+# Visual Studio Code
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -27,3 +29,17 @@
 !.vscode/extensions.json
 
 *.code-workspace
+
+# dependencies
+node_modules
+bower_components
+
+# compiled output
+/dist
+/.tmp
+
+# System Files
+.DS_Store
+Thumbs.db
+
+
