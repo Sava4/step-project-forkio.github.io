@@ -1,6 +1,7 @@
 const { src, dest, watch, series, parallel, lastRun } = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
 const del = require('del');
 const autoprefixer = require('autoprefixer');
@@ -16,6 +17,7 @@ const port = argv.port || 9000;
 function styles() {
   return src('src/scss/**/*.scss')
     .pipe($.plumber())
+    // .pipe(concat('styles.min.css'))
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,
@@ -25,7 +27,7 @@ function styles() {
       autoprefixer(),
       cssnano()
     ]))
-    .pipe(rename("styles.min.css"))
+    .pipe(rename('styles.min.css'))
     .pipe(dest('./dist/'))
     .pipe(server.reload({stream: true}));
 };
@@ -33,8 +35,10 @@ function styles() {
 function scripts() {
   return src('src/js/**/*.js')
     .pipe($.plumber())
+    .pipe(concat('script.min.js'))
+    .pipe($.babel())
     .pipe($.uglify({compress: {drop_console: true}}))
-    .pipe(rename("script.min.js"))
+    .pipe(rename('script.min.js'))
     .pipe(dest('./dist/'))
     .pipe(server.reload({stream: true}));
 };
@@ -78,8 +82,7 @@ const build = series(
     lint,
     series(parallel(styles, scripts)),
     images,
-    fonts,
-    ),
+    fonts),
     measureSize
     );
     
