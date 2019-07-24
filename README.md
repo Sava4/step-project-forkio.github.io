@@ -26,10 +26,10 @@ Preview: https://sava4.github.io/step-project-forkio.github.io/
 ## Participants
 
 ### Sava4 https://github.com/Sava4
-    * Sections 2 & 4
-    * Gulp setup
-    * Task management
+* Sections 2 & 4
+* Gulp setup
+* Task management
 ### AlexRusanov https://github.com/AlexRusanov
-    * Sections 1 & 3
-    * Menu
-    * Common styles
+* Sections 1 & 3
+* Menu
+* Common styles
