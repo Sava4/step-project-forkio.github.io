@@ -1,0 +1,187 @@
+.peopleTalking {
+  width: 100vw;
+  background: #4b3b4e url("../../dist/img/Testimonials_background.png") no-repeat top;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  .people-talking-container {
+    padding-top: 60px;
+    margin: 0 3%;
+    border-bottom: 2px solid #645766;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 41px;
+    margin-bottom: 5px;
+  }
+
+  &__list {
+    padding: 0 20px 45px;
+
+    &__item {
+      margin-top: 45px;
+
+      &__text {
+        margin-top: 25px;
+        font-size: 16px;
+        font-style: italic;
+      }
+    }
+  }
+
+  &__footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  .peopleTalking {
+    .people-talking-container {
+      padding-top: 80px;
+      margin: 0 2.6%;
+    }
+
+    &__title {
+      font-size: 40px;
+      margin-bottom: 75px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-column-gap: 13%;
+      grid-row-gap: 50px;
+      align-items: end;
+      padding: 0 0 60px;
+
+      &__item {
+        margin-top: 0;
+
+        &__text {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    &__footer {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #918094;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .peopleTalking {
+    .people-talking-container {
+      padding-top: 100px;
+      margin: 0 10px;
+      border-bottom: none;
+    }
+
+    &__title {
+      font-size: 46px;
+      margin-bottom: 85px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 8.7%;
+      grid-row-gap: 50px;
+      align-items: end;
+      padding: 0 0 120px;
+
+      &__item {
+        margin-top: 0;
+
+        &__text {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    &__footer {
+      display: block;
+      width: 62%;
+      position: relative;
+      padding-bottom: 15px;
+      margin: 0 auto;
+      font-size: 14px;
+      color: #918094;
+    }
+
+    &__footer::after {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: 5%;
+      bottom: 0;
+      width: 90%;
+      border-bottom: 2px solid #645766;
+      font-size: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .peopleTalking {
+    .people-talking-container {
+      width: 1180px;
+      padding: 100px 10px 0;
+      margin: 0 auto;
+      border-bottom: none;
+    }
+
+    &__title {
+      font-size: 46px;
+      margin-bottom: 85px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 8.7%;
+      grid-row-gap: 50px;
+      align-items: end;
+      padding: 0 0 120px;
+
+      &__item {
+        margin-top: 0;
+
+        &__text {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    &__footer {
+      display: block;
+      width: 62%;
+      position: relative;
+      padding-bottom: 15px;
+      margin: 0 auto;
+      font-size: 14px;
+      color: #918094;
+    }
+
+    &__footer::after {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      left: 5%;
+      bottom: 0;
+      width: 90%;
+      border-bottom: 2px solid #645766;
+      font-size: 0;
+    }
+  }
+}
