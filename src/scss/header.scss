@@ -29,6 +29,12 @@ $purpleColor: #8d81ac;
     width: 43px;
     height: 41px;
     background: url("../../dist/img/Logo.png") no-repeat;
+    cursor: pointer;
+  }
+
+  &__logo:hover {
+    background: url("../../dist/img/Logo_hover.png") no-repeat;
+    color: #fff;
   }
 
   &__burgerMenuIcon {
@@ -57,6 +63,11 @@ $purpleColor: #8d81ac;
   font-weight: 700;
   background-color: $purpleColor;
   color: #fff;
+}
+
+.purpleBtn:hover {
+  background-color: #fff;
+  color: $purpleColor;
 }
 
 .navMenu {
@@ -130,12 +141,17 @@ $purpleColor: #8d81ac;
 
 .purpleBtn-download {
   position: relative;
-  bottom: -402.5px;
+  bottom: -403.5px;
   width: 111.54%;
   padding: 15px 0;
+  border: 1px solid $purpleColor;
   border-radius: 30px;
   font-size: 15px;
   text-align: center;
+}
+
+.purpleBtn-download:hover {
+  border: 1px solid $purpleColor;
 }
 
 .purpleBtn-download::after {
@@ -160,6 +176,10 @@ $purpleColor: #8d81ac;
       line-height: 41px;
       font-weight: 700;
       color: $purpleColor;
+    }
+
+    &__logo:hover::after {
+      color: #fff;
     }
 
     &__burgerMenuIcon {
@@ -191,6 +211,10 @@ $purpleColor: #8d81ac;
       font-weight: 700;
       background-color: inherit;
       color: $purpleColor;
+    }
+
+    &__item:hover {
+      color: #fff;
     }
   }
 
@@ -231,7 +255,7 @@ $purpleColor: #8d81ac;
     padding: 30px 90px;
 
     &__logo {
-      padding-right: 35%;
+      margin-right: 35%;
     }
 
     &__logo::after {
@@ -241,6 +265,10 @@ $purpleColor: #8d81ac;
       line-height: 41px;
       font-weight: 700;
       color: $purpleColor;
+    }
+
+    &__logo:hover::after {
+      color: #fff;
     }
 
     &__burgerMenuIcon {
@@ -274,6 +302,10 @@ $purpleColor: #8d81ac;
       font-weight: 700;
       background-color: inherit;
       color: $purpleColor;
+    }
+
+    &__item:hover {
+      color: #fff;
     }
   }
 
@@ -314,7 +346,7 @@ $purpleColor: #8d81ac;
     padding: 30px 10px;
 
     &__logo {
-      padding-right: 35%;
+      margin-right: 35%;
     }
 
     &__logo::after {
@@ -324,6 +356,10 @@ $purpleColor: #8d81ac;
       line-height: 41px;
       font-weight: 700;
       color: $purpleColor;
+    }
+
+    &__logo:hover::after {
+      color: #fff;
     }
 
     &__burgerMenuIcon {
@@ -355,6 +391,10 @@ $purpleColor: #8d81ac;
       background-color: inherit;
       color: $purpleColor;
     }
+
+    &__item:hover {
+      color: #fff;
+    }
   }
 
   .headerAppDescription {
@@ -378,7 +418,7 @@ $purpleColor: #8d81ac;
     width: 390px;
     padding: 23px 0;
     position: relative;
-    bottom: -516px;
+    bottom: -517px;
     border-radius: 70px;
   }
 
