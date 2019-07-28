@@ -17,7 +17,7 @@ const port = argv.port || 9000;
 function styles() {
   return src('src/scss/**/*.scss')
     .pipe($.plumber())
-    // .pipe(concat('styles.min.css'))
+    .pipe(concat('styles.min.css'))
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,
@@ -30,7 +30,7 @@ function styles() {
     .pipe(rename('styles.min.css'))
     .pipe(dest('./dist/'))
     .pipe(server.reload({stream: true}));
-};
+}
 
 function scripts() {
   return src('src/js/**/*.js')
@@ -41,8 +41,7 @@ function scripts() {
     .pipe(rename('script.min.js'))
     .pipe(dest('./dist/'))
     .pipe(server.reload({stream: true}));
-};
-
+}
 
 const lintBase = files => {
   return src(files)
@@ -50,22 +49,23 @@ const lintBase = files => {
     .pipe(server.reload({stream: true, once: true}))
     .pipe($.eslint.format())
     .pipe($.if(!server.active, $.eslint.failAfterError()));
-}
+};
+
 function lint() {
   return lintBase('src/js/**/*.js')
     .pipe(dest('src/js'));
-};
+}
 
 function images() {
   return src('src/img/**/*', { since: lastRun(images) })
   .pipe($.imagemin())
-  .pipe(dest('dist/img'));
-};
+  .pipe(dest('./dist/img/'));
+}
 
 function fonts() {
   return src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-  .pipe(dest('dist/fonts'));
-};
+  .pipe(dest('dist/fonts/'));
+}
 
 function clean() {
   return del(['dist'])
@@ -85,7 +85,7 @@ const build = series(
     fonts),
     measureSize
     );
-    
+
     function startAppServer() {
       server.init({
         notify: false,
@@ -97,7 +97,7 @@ const build = series(
           }
         }
       });
-      
+
       watch([
         'src/img/**/*',
         '.src/fonts/**/*',
@@ -107,9 +107,9 @@ const build = series(
       watch('src/js/**/*.js', scripts);
       watch('src/fonts/**/*', fonts);
     }
-    
-const dev = series(clean, parallel(styles, scripts, fonts), startAppServer);
-    
+
+const dev = series(clean, parallel(styles, scripts, images, fonts), startAppServer);
+
     exports.dev = dev;
     exports.build = build;
     exports.default = build;
