@@ -64,8 +64,8 @@ function images() {
 
 function fonts() {
   return src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-  .pipe(dest('dist/fonts/'));
-}
+  .pipe(dest('./dist/fonts'));
+};
 
 function clean() {
   return del(['dist'])
