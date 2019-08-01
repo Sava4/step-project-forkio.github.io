@@ -7,9 +7,17 @@
 
 $purpleColor: #8d81ac;
 
+$fontLato: 'Lato', sans-serif;
+$fontMontserrat: 'Montserrat', sans-serif;
+
 %burgerBarPosAbsolute {
   content: "";
   position: absolute;
+}
+
+.outer-container {
+  width: 100vw;
+  font-family: $fontMontserrat;
 }
 
 .header-menu-bg {
@@ -30,6 +38,7 @@ $purpleColor: #8d81ac;
     height: 41px;
     background: url("../../dist/img/Logo.png") no-repeat;
     cursor: pointer;
+    font-family: $fontLato;
   }
 
   &__logo:hover {
@@ -131,6 +140,7 @@ $purpleColor: #8d81ac;
     line-height: 26px;
     text-align: center;
     color: #7a7096;
+    font-family: $fontLato;
   }
 
   &__version {
@@ -255,7 +265,7 @@ $purpleColor: #8d81ac;
     padding: 30px 90px;
 
     &__logo {
-      margin-right: 35%;
+      margin-right: 30%;
     }
 
     &__logo::after {
@@ -288,7 +298,7 @@ $purpleColor: #8d81ac;
 
   .navMenu {
     order: 2;
-    flex-basis: 43%;
+    flex-basis: 46%;
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -346,7 +356,7 @@ $purpleColor: #8d81ac;
     padding: 30px 10px;
 
     &__logo {
-      margin-right: 35%;
+      margin-right: 30%;
     }
 
     &__logo::after {
@@ -376,7 +386,7 @@ $purpleColor: #8d81ac;
 
   .navMenu {
     order: 2;
-    flex-basis: 43%;
+    flex-basis: 46%;
     padding: 0;
     display: flex;
     justify-content: space-around;
