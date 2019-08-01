@@ -5,11 +5,6 @@
   background-color: #e5e3e3;
 }
 
-$purpleColor: #8d81ac;
-
-$fontLato: 'Lato', sans-serif;
-$fontMontserrat: 'Montserrat', sans-serif;
-
 %burgerBarPosAbsolute {
   content: "";
   position: absolute;
@@ -200,10 +195,6 @@ $fontMontserrat: 'Montserrat', sans-serif;
   .purpleBtn {
     padding: 11px 35px;
     border-radius: 25px;
-    font-size: 16px;
-    font-weight: 700;
-    background-color: $purpleColor;
-    color: #fff;
   }
 
   .navMenu {
@@ -291,9 +282,6 @@ $fontMontserrat: 'Montserrat', sans-serif;
     padding: 11px 35px;
     border-radius: 25px;
     font-size: 16px;
-    font-weight: 700;
-    background-color: $purpleColor;
-    color: #fff;
   }
 
   .navMenu {
