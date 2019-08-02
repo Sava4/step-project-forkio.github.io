@@ -1,0 +1,205 @@
+.forkSubscription {
+
+    &-container {
+        padding: 71px 4%;
+        background-color: #4b3b4e;
+        text-align: center;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 24px;
+        font-family: $fontMontserrat;
+        font-weight: bold;
+        line-height: 1.5;
+        padding: 0 5%;
+        margin-bottom: 53px;
+    }
+
+    &__list {
+    display: grid;
+      grid-template-columns: 257px;
+      grid-template-rows: 457px 457px 560px 457px;
+      grid-row-gap: 14px;
+      justify-content: center;
+
+        &__item {
+            background-color: #5f5161;
+            position: relative;
+    
+            &-header {
+                height: 97px;
+                background-color: #685b6a;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__title {
+                font-size: 20px;
+                font-family: $fontMontserrat;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            &-body {
+                background-color: #5f5161;
+            }
+
+            &__price {
+                margin: 32px 0 24px 0;
+                font-size: 57px;
+                font-family: $fontMontserrat;
+                color: #fff;
+
+                &-bold {
+                    font-weight: bold;
+                }
+            }
+
+            &__per {
+                text-transform: uppercase;
+                font-size: 11px;
+                font-family: $fontMontserrat;
+                margin-bottom: 75px;
+                color: #fff;
+            }
+
+            &__included-container {
+                
+                &__item {
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    font-family: $fontMontserrat;
+                    color: #fff;
+                    margin-bottom: 15px;    
+                }
+            }
+
+            &__button {
+                position: absolute;
+                bottom: 40px;
+                left: 48.5px;
+                padding: 15px 0;
+                width: 160px;
+                background-color: #776b79;
+                color: #fff;
+                text-transform: uppercase;
+                font-family: $fontMontserrat;
+                font-size: 12px;
+                border-radius: 20px;
+
+                &:hover {
+                    background-color: #d2cdd2;
+                    color: #7f6d78;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 192px;
+                left: 98.5px;
+                width: 60px;
+                height: 5px;
+                background-color: $purpleColor;
+                font-size: 0;
+            }
+
+            &-big {
+                background-color: #413344;
+                position: relative;
+                justify-self: center;
+                width: 290px;
+                height: 560px;
+
+                &-header {
+                    height: 111px;
+                    background-color: #3a2d3d;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+    
+                &__title {
+                    font-size: 20px;
+                    font-family: $fontMontserrat;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+    
+                &-body {
+                    background-color: #5f5161;
+                }
+    
+                &__price {
+                    margin: 15px 0 21px 0;
+                    font-size: 78px;
+                    font-family: $fontMontserrat;
+                    color: #fff;
+    
+                    &-bold {
+                        font-weight: bold;
+                    }
+                }
+    
+                &__per {
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    font-family: $fontMontserrat;
+                    margin-bottom: 95px;
+                    color: #fff;
+                }
+    
+                &__included-container {
+                    
+                    &__item {
+                        text-transform: capitalize;
+                        font-size: 15px;
+                        font-family: $fontMontserrat;
+                        color: #fff;
+                        margin-bottom: 15px;    
+                    }
+                }
+    
+                &__button {
+                    position: absolute;
+                    bottom: 47px;
+                    left: 50px;
+                    padding: 19px 0;
+                    width: 190px;
+                    background-color: #5d5160;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-family: $fontMontserrat;
+                    font-size: 14px;
+                    border-radius: 35px;
+
+                    &:hover {
+                        background-color: #d2cdd2;
+                        color: #7f6d78;
+                    }
+                }
+    
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 270px;
+                    left: 115px;
+                    width: 60px;
+                    height: 5px;
+                    background-color: $purpleColor;
+                    font-size: 0;
+                }
+            }
+        }
+
+        
+    }
+
+
+}
