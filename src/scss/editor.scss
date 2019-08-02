@@ -9,9 +9,9 @@
     }
 
     &__title {
-        font-size: 19px;
+        font-size: 20px;
         color: #635c73;
-        line-height: 1.6;
+        line-height: 1.5;
         font-family: $fontMontserrat;
         font-weight: bold;
         text-transform: uppercase;
@@ -20,11 +20,11 @@
     }
 
     &__subtitle {
-        font-size: 10px;
+        font-size: 14px;
         color: $blackTxt;
         font-family: $fontLato;
         margin-bottom: 34px;
-        line-height: 2.5;        
+        line-height: 1.5;        
     }
 
 
@@ -45,7 +45,7 @@
     }
 
     &__list {
-        margin: 0 8% 57px;
+        margin: 0 8% 20px;
 
             &__item {
                 margin-bottom: 37px;
@@ -56,16 +56,16 @@
                 
                 &__title {
                     font-family: $fontMontserrat;
-                    font-size: 12px;
+                    font-size: 16px;
                     color: $blackTxt;
                     margin-bottom: 20px;
                 }
 
                 &__text {
                     font-family: $fontLato;
-                    font-size: 10px;
+                    font-size: 14px;
                     color: #848e97;
-                    line-height: 2.5;
+                    line-height: 1.5;
                 }
             }
         }
