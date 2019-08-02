@@ -28,7 +28,7 @@ function styles() {
       cssnano()
     ]))
     .pipe(rename('styles.min.css'))
-    .pipe(dest('./dist/'))
+    .pipe(dest('./dist/styles/'))
     .pipe(server.reload({stream: true}));
 }
 
