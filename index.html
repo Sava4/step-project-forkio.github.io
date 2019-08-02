@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="dist/script.min.js"></script>
     <link rel="stylesheet" href="dist/styles/styles.min.css">
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>Forkio step project</title>
 </head>
 <body>
@@ -43,7 +41,7 @@
     <div class="revolutionary-editor-container">
         <h1 class="revolutionaryEditor__title">Revolutionary editor</h1>
         <p class="revolutionaryEditor__subtitle">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
-        <div class="gh-buttons">
+        <div class="revolutionaryEditor__gh-buttons-container">
             <!-- Place this tag where you want the button to render. -->
             <a class="github-button" href="https://github.com/microsoft/vscode/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch microsoft/vscode on GitHub">Watch</a>
             <!-- Place this tag where you want the button to render. -->
@@ -53,36 +51,38 @@
         </div>
     </div>
 
-    <div class="editor-features-container">
-        <h2 class="editor-features__title">&lt;Here is what you get&gt;</h2>
-        <div class="editor-features__list">
-          <div class="editor-features__list__item">
-            <img src="dist/img/Icon_Search.png" alt="Browser window with search icon" class="editor-features__list__item__img">
-            <p class="editor-features__list__item__title">Creatred to Make The Web Better</p>
-            <p class="editor-features__list__item__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. 
-            </p>
+    <section class="editorFeatures">
+      <div class="editorFeatures-container">
+          <h2 class="editorFeatures__title">&lt;Here is what you get&gt;</h2>
+          <div class="editorFeatures__list">
+            <div class="editorFeatures__list__item">
+              <img src="dist/img/Icon_Search.png" alt="Browser window with search icon" class="editorFeatures__list__item__img">
+              <p class="editorFeatures__list__item__title">Creatred to Make The Web Better</p>
+              <p class="editorFeatures__list__item__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. 
+              </p>
+            </div>
+            <div class="editorFeatures__list__item">
+              <img src="dist/img/Icon_volume.png" alt="Volume regulator knob" class="editorFeatures__list__item__img">
+              <p class="editorFeatures__list__item__title">Incredibly Powerful Tool</p>
+              <p class="editorFeatures__list__item__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+            </div>
+            <div class="editorFeatures__list__item">
+              <img src="dist/img/Icon_beaker.png" alt="Beaker icon with reagent inside" class="editorFeatures__list__item__img">
+              <p class="editorFeatures__list__item__title">Experimental Stuff</p>
+              <p class="editorFeatures__list__item__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+            </div>
+            <div class="editorFeatures__list__item">
+              <img src="dist/img/Icon_clock.png" alt="Clock icon that shows time" class="editorFeatures__list__item__img">
+              <p class="editorFeatures__list__item__title">Creatred to Make The Web Better</p>
+              <p class="editorFeatures__list__item__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+            </div>
           </div>
-          <div class="editor-features__list__item">
-            <img src="dist/img/Icon_volume.png" alt="Volume regulator knob" class="editor-features__list__item__img">
-            <p class="editor-features__list__item__title">Incredibly Powerful Tool</p>
-            <p class="editor-features__list__item__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+          
+          <div class="editorFeatures__sample">
+            <img src="dist/img/Editor.png" alt="screenshot of the editor in action" class="editorFeatures__hero__img">
           </div>
-          <div class="editor-features__list__item">
-            <img src="dist/img/Icon_beaker.png" alt="Beaker icon with reagent inside" class="editor-features__list__item__img">
-            <p class="editor-features__list__item__title">Experimental Stuff</p>
-            <p class="editor-features__list__item__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
-          </div>
-          <div class="editor-features__list__item">
-            <img src="dist/img/Icon_clock.png" alt="Clock icon that shows time" class="editor-features__list__item__img">
-            <p class="editor-features__list__item__title">Creatred to Make The Web Better</p>
-            <p class="editor-features__list__item__text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
-          </div>
-        </div>
-        
-        <div class="editor-features__sample">
-          <img src="dist/img/Editor.png" alt="screenshot of the editor in action" class="editor-features__hero__img">
-        </div>
-    </div>
+      </div>
+    </section>
   </section>
 
   <section class="peopleTalking">
