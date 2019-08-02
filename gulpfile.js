@@ -28,7 +28,7 @@ function styles() {
       cssnano()
     ]))
     .pipe(rename('styles.min.css'))
-    .pipe(dest('./dist/'))
+    .pipe(dest('./dist/styles/'))
     .pipe(server.reload({stream: true}));
 }
 
@@ -62,11 +62,6 @@ function images() {
   .pipe(dest('./dist/img/'));
 }
 
-function fonts() {
-  return src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-  .pipe(dest('./dist/fonts'));
-};
-
 function clean() {
   return del(['dist'])
 }
@@ -81,8 +76,7 @@ const build = series(
   parallel(
     lint,
     series(parallel(styles, scripts)),
-    images,
-    fonts),
+    images),
     measureSize
     );
 
@@ -100,15 +94,13 @@ const build = series(
 
       watch([
         'src/img/**/*',
-        '.src/fonts/**/*',
         './index.html'
       ]).on('change', server.reload);
       watch('src/scss/**/*.scss', styles);
       watch('src/js/**/*.js', scripts);
-      watch('src/fonts/**/*', fonts);
     }
 
-const dev = series(clean, parallel(styles, scripts, images, fonts), startAppServer);
+const dev = series(clean, parallel(styles, scripts, images), startAppServer);
 
     exports.dev = dev;
     exports.build = build;
