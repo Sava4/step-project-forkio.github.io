@@ -199,3 +199,105 @@
         }
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .forkSubscription {
+        
+        &-container {
+            padding: 71px 10px;
+            text-align: center;
+            background-image: url(../img/Pricing_background_big.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__title {
+            font-size: 41px;
+            line-height: 1;
+
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: minmax(235px, 257px) minmax(235px, 257px);
+            grid-template-rows: 457px 457px;
+            grid-row-gap: 92px;
+            grid-column-gap: 3%;
+            justify-content: center;
+            margin-bottom: 82px;
+            
+            &__item-big {
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .forkSubscription {
+        
+        &-container {
+            padding: 71px 10px;
+            text-align: center;
+            background-image: url(../img/Pricing_background_big.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__title {
+            font-size: 46px;
+            line-height: 1;
+            margin-bottom: 122px;
+
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: minmax(235px, 257px) minmax(235px, 257px) minmax(280px, 299px) minmax(235px, 257px);
+            grid-template-rows: 457px;
+            grid-column-gap: 14px;
+            justify-content: center;
+            margin-bottom: 82px;
+            
+            &__item-big {
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .forkSubscription {
+        
+        &-container {
+            padding: 71px 10%;
+            text-align: center;
+            background-image: url(../img/Pricing_background_big.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__title {
+            font-size: 46px;
+            line-height: 1;
+            margin-bottom: 122px;
+
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 257px 257px 299px 257px;
+            grid-template-rows: 457px;
+            grid-column-gap: 14px;
+            justify-content: center;
+            margin-bottom: 82px;
+            
+            &__item-big {
+                align-self: center;
+                justify-self: center;
+            }
+        }
+    }
+}

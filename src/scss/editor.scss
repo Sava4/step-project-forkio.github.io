@@ -47,13 +47,13 @@
     &__list {
         margin: 0 8% 20px;
 
+            &__img {
+                margin-bottom: 29px;
+            }
+            
             &__item {
                 margin-bottom: 37px;
 
-                &__img {
-                    margin-bottom: 29px;
-                }
-                
                 &__title {
                     font-family: $fontMontserrat;
                     font-size: 16px;
@@ -66,6 +66,174 @@
                     font-size: 14px;
                     color: #848e97;
                     line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .revolutionaryEditor {
+        
+        .revolutionary-editor-container {
+            margin: 0 50px;
+        }
+
+        &__title {
+            font-size: 31px;
+        }
+
+        &__subtitle {
+            font-size: 16px;   
+        }
+        .editorFeatures {
+
+            &__title {
+                font-size: 41px;
+                padding: 0 50px;
+            }
+
+            &__list {
+                margin: 0 37px 57px 30px;
+                display: grid;
+                grid-template-columns: minmax(60px, 111px) 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-column-gap: 23px;
+                grid-row-gap: 60px;
+
+                &__img {
+                    margin-bottom: 0;
+                }
+                &__item {
+                    margin-bottom: 0;
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__text {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .revolutionaryEditor {
+        
+        .revolutionary-editor-container {
+            padding-left: 90px;
+        }
+
+
+        &__subtitle {
+            font-size: 16px;   
+        }
+        .editorFeatures {
+    
+            &-container {
+                display: grid;
+                grid-template-columns: 57% 1fr;
+                grid-template-rows: 75px 1fr;
+            }
+        
+            &__title {
+                order: 2;
+                justify-self: left;
+                font-size: 41px;
+                padding: 0;
+            }
+
+            &__sample {
+                order: 4;
+                overflow: hidden;
+                align-self: start;
+            }
+
+            &__list {
+                grid-row: 1 / span 2;
+                margin: 0 37px 57px 30px;
+                display: grid;
+                grid-template-columns: minmax(60px, 111px) 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-column-gap: 23px;
+                grid-row-gap: 60px;
+
+                &__img {
+                    margin-bottom: 0;
+                }
+                &__item {
+                    margin-bottom: 0;
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__text {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .revolutionaryEditor {
+        
+        .revolutionary-editor-container {
+            padding-left: 90px;
+        }
+
+
+        &__subtitle {
+            font-size: 16px;   
+        }
+        .editorFeatures {
+    
+            &-container {
+                display: grid;
+                grid-template-columns: 57% 1fr;
+                grid-template-rows: 75px 1fr;
+            }
+        
+            &__title {
+                order: 2;
+                justify-self: left;
+                font-size: 41px;
+                padding: 0;
+            }
+
+            &__sample {
+                order: 4;
+                overflow: hidden;
+                align-self: start;
+            }
+
+            &__list {
+                grid-row: 1 / span 2;
+                margin: 0 37px 57px 30px;
+                display: grid;
+                grid-template-columns: minmax(60px, 111px) 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-column-gap: 23px;
+                grid-row-gap: 60px;
+
+                &__img {
+                    margin-bottom: 0;
+                }
+                &__item {
+                    margin-bottom: 0;
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__text {
+                        text-align: left;
+                    }
                 }
             }
         }
