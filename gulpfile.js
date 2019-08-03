@@ -15,9 +15,8 @@ const port = argv.port || 9000;
 
 
 function styles() {
-  return src('src/scss/**/*.scss')
+  return src('src/scss/style.scss')
     .pipe($.plumber())
-    .pipe(concat('styles.min.css'))
     .pipe($.sass.sync({
       outputStyle: 'expanded',
       precision: 10,
