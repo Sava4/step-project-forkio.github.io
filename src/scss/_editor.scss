@@ -1,6 +1,6 @@
 .revolutionaryEditor {
     padding-top: 120px;
-    
+
     .revolutionary-editor-container {
         background-color: #fff;
         padding-bottom: 88px;
@@ -24,7 +24,7 @@
         color: $blackTxt;
         font-family: $fontLato;
         margin-bottom: 34px;
-        line-height: 1.5;        
+        line-height: 1.5;
     }
 
 
@@ -50,7 +50,7 @@
             &__img {
                 margin-bottom: 29px;
             }
-            
+
             &__item {
                 margin-bottom: 37px;
 
@@ -69,12 +69,17 @@
                 }
             }
         }
+
+    &__sample {
+      height: 519px;
+      background: url("../img/Editor.png") no-repeat;
+        }
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 992px) {
     .revolutionaryEditor {
-        
+
         .revolutionary-editor-container {
             margin: 0 50px;
         }
@@ -84,7 +89,7 @@
         }
 
         &__subtitle {
-            font-size: 16px;   
+            font-size: 16px;
         }
         .editorFeatures {
 
@@ -122,23 +127,23 @@
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     .revolutionaryEditor {
-        
+
         .revolutionary-editor-container {
             padding-left: 90px;
         }
 
 
         &__subtitle {
-            font-size: 16px;   
+            font-size: 16px;
         }
         .editorFeatures {
-    
+
             &-container {
                 display: grid;
                 grid-template-columns: 57% 1fr;
                 grid-template-rows: 75px 1fr;
             }
-        
+
             &__title {
                 order: 2;
                 justify-self: left;
@@ -182,23 +187,23 @@
 
 @media screen and (min-width: 1201px) {
     .revolutionaryEditor {
-        
+
         .revolutionary-editor-container {
             padding-left: 90px;
         }
 
 
         &__subtitle {
-            font-size: 16px;   
+            font-size: 16px;
         }
         .editorFeatures {
-    
+
             &-container {
                 display: grid;
                 grid-template-columns: 57% 1fr;
                 grid-template-rows: 75px 1fr;
             }
-        
+
             &__title {
                 order: 2;
                 justify-self: left;
