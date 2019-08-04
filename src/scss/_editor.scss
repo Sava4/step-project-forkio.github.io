@@ -1,83 +1,85 @@
-.revolutionaryEditor {
+@media screen and (max-width: $mobileBreakPoint) {
+  .revolutionaryEditor {
     padding-top: 120px;
 
     .revolutionary-editor-container {
-        background-color: #fff;
-        padding-bottom: 88px;
-        margin: 0 8%;
-        text-align: center;
+      background-color: #fff;
+      padding-bottom: 88px;
+      margin: 0 8%;
+      text-align: center;
     }
 
     &__title {
-        font-size: 20px;
-        color: #635c73;
-        line-height: 1.5;
-        font-family: $fontMontserrat;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 0 5%;
-        margin-bottom: 23px;
+      font-size: 20px;
+      color: #635c73;
+      line-height: 1.5;
+      font-family: $fontMontserrat;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0 5%;
+      margin-bottom: 23px;
     }
 
     &__subtitle {
-        font-size: 14px;
-        color: $blackTxt;
-        font-family: $fontLato;
-        margin-bottom: 34px;
-        line-height: 1.5;
+      font-size: 14px;
+      color: $blackTxt;
+      font-family: $fontLato;
+      margin-bottom: 34px;
+      line-height: 1.5;
     }
 
 
-.editorFeatures {
-    &-container {
+    .editorFeatures {
+      &-container {
         padding-top: 34px;
         background-color: #f4f4f4;
         text-align: center;
-    }
+      }
 
-    &__title {
+      &__title {
         font-size: 23px;
         font-family: $fontMontserrat;
         font-weight: bold;
         color: $purpleColor;
         padding: 0 17%;
         margin-bottom: 34px;
-    }
+      }
 
-    &__list {
+      &__list {
         margin: 0 8% 20px;
 
-            &__img {
-                margin-bottom: 29px;
-            }
-
-            &__item {
-                margin-bottom: 37px;
-
-                &__title {
-                    font-family: $fontMontserrat;
-                    font-size: 16px;
-                    color: $blackTxt;
-                    margin-bottom: 20px;
-                }
-
-                &__text {
-                    font-family: $fontLato;
-                    font-size: 14px;
-                    color: #848e97;
-                    line-height: 1.5;
-                }
-            }
+        &__img {
+          margin-bottom: 29px;
         }
 
-    &__sample {
-      height: 519px;
-      background: url("../img/Editor.png") no-repeat;
+        &__item {
+          margin-bottom: 37px;
+
+          &__title {
+            font-family: $fontMontserrat;
+            font-size: 16px;
+            color: $blackTxt;
+            margin-bottom: 20px;
+          }
+
+          &__text {
+            font-family: $fontLato;
+            font-size: 14px;
+            color: #848e97;
+            line-height: 1.5;
+          }
         }
+      }
+
+      &__sample {
+        height: 519px;
+        background: url("../img/Editor.png") no-repeat;
+      }
     }
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width: 992px) {
+@media screen and (max-width: $tabletBreakPoint) {
     .revolutionaryEditor {
 
         .revolutionary-editor-container {
@@ -125,7 +127,7 @@
     }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (max-width: $desktopBreakPoint) {
     .revolutionaryEditor {
 
         .revolutionary-editor-container {
@@ -185,7 +187,7 @@
     }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: $retinaBreakPoint) {
     .revolutionaryEditor {
 
         .revolutionary-editor-container {

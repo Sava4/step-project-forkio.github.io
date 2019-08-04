@@ -1,0 +1,11 @@
+@mixin burgerMenuBar($width) {
+  width: $width;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #e5e3e3;
+}
+
+%burgerBarPosAbsolute {
+  content: "";
+  position: absolute;
+}

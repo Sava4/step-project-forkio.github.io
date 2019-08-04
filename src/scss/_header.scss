@@ -1,176 +1,165 @@
-@mixin burgerMenuBar($width) {
-  width: $width;
-  height: 2px;
-  border-radius: 2px;
-  background-color: #e5e3e3;
-}
-
-%burgerBarPosAbsolute {
-  content: "";
-  position: absolute;
-}
-
-.outer-container {
-  width: 100%;
-  font-family: $fontMontserrat;
-}
-
-.header-menu-bg {
-  background-color: #27262a;
-}
-
-.headerNavBar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: 31px 3%;
-  margin: 0 auto;
-
-  &__logo {
-    width: 43px;
-    height: 41px;
-    background: url("../img/Logo.png") no-repeat;
-    cursor: pointer;
-    font-family: $fontLato;
+@media screen and (max-width: $mobileBreakPoint) {
+  .outer-container {
+    width: 100%;
+    font-family: $fontMontserrat;
   }
 
-  &__logo:hover {
-    background: url("../img/Logo_hover.png") no-repeat;
+  .header-menu-bg {
+    background-color: #27262a;
+  }
+
+  .headerNavBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 31px 3%;
+    margin: 0 auto;
+
+    &__logo {
+      width: 43px;
+      height: 41px;
+      background: url("../img/Logo.png") no-repeat;
+      cursor: pointer;
+      font-family: $fontLato;
+    }
+
+    &__logo:hover {
+      background: url("../img/Logo_hover.png") no-repeat;
+      color: #fff;
+    }
+
+    &__burgerMenuIcon {
+      @include burgerMenuBar(25px);
+      position: relative;
+    }
+
+    &__burgerMenuIcon::before {
+      @include burgerMenuBar(20px);
+      @extend %burgerBarPosAbsolute;
+      top: -7px;
+      right: 0;
+    }
+
+    &__burgerMenuIcon::after {
+      @include burgerMenuBar(25px);
+      @extend %burgerBarPosAbsolute;
+      bottom: -7px;
+    }
+  }
+
+  .purpleBtn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: $purpleColor;
     color: #fff;
   }
 
-  &__burgerMenuIcon {
-    @include burgerMenuBar(25px);
-    position: relative;
+  .purpleBtn:hover {
+    background-color: #fff;
+    color: $purpleColor;
   }
 
-  &__burgerMenuIcon::before {
-    @include burgerMenuBar(20px);
-    @extend %burgerBarPosAbsolute;
-    top: -7px;
-    right: 0;
-  }
+  .navMenu {
+    display: none;
 
-  &__burgerMenuIcon::after {
-    @include burgerMenuBar(25px);
-    @extend %burgerBarPosAbsolute;
-    bottom: -7px;
-  }
-}
+    &__item {
+      position: relative;
+      padding: 30px;
+      border-bottom: 2px solid #3b3b3b;
+      font-size: 20px;
+      background-color: #333333;
+      color: #fff;
+    }
 
-.purpleBtn {
-  padding: 12px 25px;
-  border-radius: 25px;
-  font-size: 13px;
-  font-weight: 700;
-  background-color: $purpleColor;
-  color: #fff;
-}
 
-.purpleBtn:hover {
-  background-color: #fff;
-  color: $purpleColor;
-}
-
-.navMenu {
-  display: none;
-
-  &__item {
-    position: relative;
-    padding: 30px;
-    border-bottom: 2px solid #3b3b3b;
-    font-size: 20px;
-    background-color: #333333;
-    color: #fff;
-  }
-
-  @media screen and (max-width: 480px){
     &__item:active {
-      color: $purpleColor;
+        color: $purpleColor;
     }
 
     &__item:active::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 15px;
-      width: 8px;
-      height: 53px;
-      background-color: $purpleColor;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 15px;
+        width: 8px;
+        height: 53px;
+        background-color: $purpleColor;
     }
   }
-}
 
-.navMenu-active {
-  width: 100% - 20px/320px*100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: -328px;
-}
-
-.header-description-bg {
-  background: url("../img/Laptop_background.png") no-repeat center;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.headerAppDescription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 45px 30px 380px;
-
-  &__appName {
-    font-size: 44px;
-    font-weight: 700;
-    color: #fff;
+  .navMenu-active {
+    width: 100% - 20px/320px*100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -328px;
   }
 
-  &__descr {
-    padding: 20px 0;
-    font-size: 20px;
-    line-height: 26px;
+  .header-description-bg {
+    background: url("../img/Laptop_background.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .headerAppDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 30px 380px;
+
+    &__appName {
+      font-size: 44px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    &__descr {
+      padding: 20px 0;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      color: #7a7096;
+      font-family: $fontLato;
+    }
+
+    &__version {
+      font-size: 11px;
+      color: #737b84;
+    }
+  }
+
+  .purpleBtn-download {
+    position: relative;
+    bottom: -403.5px;
+    width: 111.54%;
+    padding: 15px 0;
+    border: 1px solid $purpleColor;
+    border-radius: 30px;
+    font-size: 15px;
     text-align: center;
-    color: #7a7096;
-    font-family: $fontLato;
   }
 
-  &__version {
-    font-size: 11px;
-    color: #737b84;
+  .purpleBtn-download:hover {
+    border: 1px solid $purpleColor;
+  }
+
+  .purpleBtn-download::after {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 100%;
+    content: "Unlimited 30-Days Trial Period";
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5acb3;
   }
 }
 
-.purpleBtn-download {
-  position: relative;
-  bottom: -403.5px;
-  width: 111.54%;
-  padding: 15px 0;
-  border: 1px solid $purpleColor;
-  border-radius: 30px;
-  font-size: 15px;
-  text-align: center;
-}
-
-.purpleBtn-download:hover {
-  border: 1px solid $purpleColor;
-}
-
-.purpleBtn-download::after {
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-  width: 100%;
-  content: "Unlimited 30-Days Trial Period";
-  font-size: 12px;
-  font-weight: 400;
-  color: #a5acb3;
-}
-
-@media screen and (min-width: 481px) and (max-width: 992px){
+@media screen and (max-width: $tabletBreakPoint){
   .headerNavBar {
     padding: 22px 10px;
 
@@ -250,7 +239,7 @@
   }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px){
+@media screen and (max-width: $desktopBreakPoint){
   .headerNavBar {
     flex-wrap: nowrap;
     padding: 30px 90px;
@@ -337,7 +326,7 @@
   }
 }
 
-@media screen and (min-width: 1201px){
+@media screen and (min-width: $retinaBreakPoint){
   .headerNavBar {
     flex-wrap: nowrap;
     width: 1180px;

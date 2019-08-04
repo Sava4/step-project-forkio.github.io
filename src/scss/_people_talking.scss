@@ -1,46 +1,48 @@
-.peopleTalking {
-  width: 100%;
-  background: #4b3b4e url("../img/Testimonials_background.png") no-repeat top;
-  -webkit-background-size: cover;
-  background-size: cover;
-  font-family: $fontLato;
+@media screen and (max-width: $mobileBreakPoint) {
+  .peopleTalking {
+    width: 100%;
+    background: #4b3b4e url("../img/Testimonials_background.png") no-repeat top;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: $fontLato;
 
-  .people-talking-container {
-    padding-top: 60px;
-    margin: 0 3%;
-    border-bottom: 2px solid #645766;
-    text-align: center;
-    color: #fff;
-  }
+    .people-talking-container {
+      padding-top: 60px;
+      margin: 0 3%;
+      border-bottom: 2px solid #645766;
+      text-align: center;
+      color: #fff;
+    }
 
-  &__title {
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 41px;
-    margin-bottom: 5px;
-    font-family: $fontMontserrat;
-  }
+    &__title {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 41px;
+      margin-bottom: 5px;
+      font-family: $fontMontserrat;
+    }
 
-  &__list {
-    padding: 0 20px 45px;
+    &__list {
+      padding: 0 20px 45px;
 
-    &__item {
-      margin-top: 45px;
+      &__item {
+        margin-top: 45px;
 
-      &__text {
-        margin-top: 25px;
-        font-size: 16px;
-        font-style: italic;
+        &__text {
+          margin-top: 25px;
+          font-size: 16px;
+          font-style: italic;
+        }
       }
     }
-  }
 
-  &__footer {
-    display: none;
+    &__footer {
+      display: none;
+    }
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 992px) {
+@media screen and (max-width: $tabletBreakPoint) {
   .peopleTalking {
     .people-talking-container {
       padding-top: 80px;
@@ -79,7 +81,7 @@
   }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (max-width: $desktopBreakPoint) {
   .peopleTalking {
     .people-talking-container {
       padding-top: 100px;
@@ -133,7 +135,7 @@
   }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: $retinaBreakPoint) {
   .peopleTalking {
     .people-talking-container {
       width: 1180px;
