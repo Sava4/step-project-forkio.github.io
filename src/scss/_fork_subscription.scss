@@ -1,4 +1,4 @@
-@media screen and (max-width: $mobileBreakPoint) {
+  //TODO DRY the styles going from mobile up
   .forkSubscription {
 
     &-container {
@@ -200,9 +200,8 @@
       }
     }
   }
-}
 
-@media screen and (max-width: $tabletBreakPoint) {
+@media screen and (min-width: $tabletBreakPoint) {
     .forkSubscription {
 
         &-container {
@@ -236,7 +235,7 @@
     }
 }
 
-@media screen and (max-width: $desktopBreakPoint) {
+@media screen and (min-width: $desktopBreakPoint) {
     .forkSubscription {
 
         &-container {

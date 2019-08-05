@@ -1,0 +1,80 @@
+.purpleBtn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: $purpleColor;
+    color: #fff;
+  }
+
+.purpleBtn:hover {
+    background-color: #fff;
+    color: $purpleColor;
+  }
+
+.purpleBtn-download {
+    position: relative;
+    bottom: -403.5px;
+    width: 111.54%;
+    padding: 15px 0;
+    border: 1px solid $purpleColor;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+.purpleBtn-download:hover {
+    border: 1px solid $purpleColor;
+  }
+
+.purpleBtn-download::after {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 100%;
+    content: "Unlimited 30-Days Trial Period";
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5acb3;
+  }
+
+
+//   &__button {
+//     position: absolute;
+//     bottom: 40px;
+//     left: 48.5px;
+//     padding: 15px 0;
+//     width: 160px;
+//     background-color: #776b79;
+//     color: #fff;
+//     text-transform: uppercase;
+//     font-family: $fontMontserrat;
+//     font-size: 12px;
+//     border-radius: 20px;
+
+//     &:hover {
+//       background-color: #d2cdd2;
+//       color: #7f6d78;
+//     }
+//   }
+
+//Big button variant for Agency card!
+
+// &__button {
+//     position: absolute;
+//     bottom: 47px;
+//     left: 50px;
+//     padding: 19px 0;
+//     width: 190px;
+//     background-color: #5d5160;
+//     color: #fff;
+//     text-transform: uppercase;
+//     font-family: $fontMontserrat;
+//     font-size: 14px;
+//     border-radius: 35px;
+
+//     &:hover {
+//       background-color: #d2cdd2;
+//       color: #7f6d78;
+//     }
+//   }

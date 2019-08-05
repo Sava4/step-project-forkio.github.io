@@ -1,4 +1,3 @@
-@media screen and (max-width: $mobileBreakPoint) {
   .peopleTalking {
     width: 100%;
     background: #4b3b4e url("../img/Testimonials_background.png") no-repeat top;
@@ -40,9 +39,8 @@
       display: none;
     }
   }
-}
 
-@media screen and (max-width: $tabletBreakPoint) {
+@media screen and (min-width: $tabletBreakPoint) {
   .peopleTalking {
     .people-talking-container {
       padding-top: 80px;
@@ -81,7 +79,7 @@
   }
 }
 
-@media screen and (max-width: $desktopBreakPoint) {
+@media screen and (min-width: $desktopBreakPoint) {
   .peopleTalking {
     .people-talking-container {
       padding-top: 100px;

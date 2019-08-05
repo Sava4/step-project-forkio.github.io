@@ -1,8 +1,7 @@
-@media screen and (max-width: $mobileBreakPoint) {
-  .revolutionaryEditor {
+  .revolutionary-editor {
     padding-top: 120px;
 
-    .revolutionary-editor-container {
+    .revolutionary-editor_container {
       background-color: #fff;
       padding-bottom: 88px;
       margin: 0 8%;
@@ -72,15 +71,13 @@
       }
 
       &__sample {
-        height: 519px;
-        background: url("../img/Editor.png") no-repeat;
+        overflow: hidden;
       }
     }
   }
-}
 
-@media screen and (max-width: $tabletBreakPoint) {
-    .revolutionaryEditor {
+@media screen and (min-width: $tabletBreakPoint) {
+    .revolutionary-editor {
 
         .revolutionary-editor-container {
             margin: 0 50px;
@@ -127,17 +124,13 @@
     }
 }
 
-@media screen and (max-width: $desktopBreakPoint) {
-    .revolutionaryEditor {
+@media screen and (min-width: $desktopBreakPoint) {
+    .revolutionary-editor {
 
         .revolutionary-editor-container {
             padding-left: 90px;
         }
 
-
-        &__subtitle {
-            font-size: 16px;
-        }
         .editorFeatures {
 
             &-container {
@@ -149,14 +142,11 @@
             &__title {
                 order: 2;
                 justify-self: left;
-                font-size: 41px;
                 padding: 0;
             }
 
             &__sample {
                 order: 4;
-                overflow: hidden;
-                align-self: start;
             }
 
             &__list {
@@ -167,56 +157,21 @@
                 grid-template-rows: 1fr 1fr 1fr 1fr;
                 grid-column-gap: 23px;
                 grid-row-gap: 60px;
-
-                &__img {
-                    margin-bottom: 0;
-                }
-                &__item {
-                    margin-bottom: 0;
-
-                    &__title {
-                        text-align: left;
-                    }
-
-                    &__text {
-                        text-align: left;
-                    }
-                }
             }
         }
     }
 }
 
 @media screen and (min-width: $retinaBreakPoint) {
-    .revolutionaryEditor {
-
-        .revolutionary-editor-container {
-            padding-left: 90px;
-        }
+    .revolutionary-editor {
 
 
-        &__subtitle {
-            font-size: 16px;
-        }
         .editorFeatures {
 
             &-container {
                 display: grid;
                 grid-template-columns: 57% 1fr;
                 grid-template-rows: 75px 1fr;
-            }
-
-            &__title {
-                order: 2;
-                justify-self: left;
-                font-size: 41px;
-                padding: 0;
-            }
-
-            &__sample {
-                order: 4;
-                overflow: hidden;
-                align-self: start;
             }
 
             &__list {
@@ -228,20 +183,6 @@
                 grid-column-gap: 23px;
                 grid-row-gap: 60px;
 
-                &__img {
-                    margin-bottom: 0;
-                }
-                &__item {
-                    margin-bottom: 0;
-
-                    &__title {
-                        text-align: left;
-                    }
-
-                    &__text {
-                        text-align: left;
-                    }
-                }
             }
         }
     }
