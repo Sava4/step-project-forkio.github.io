@@ -1,8 +1,7 @@
-@media screen and (max-width: $mobileBreakPoint) {
-  .revolutionaryEditor {
+  .revolutionary-editor {
     padding-top: 120px;
 
-    .revolutionary-editor-container {
+    .revolutionary-editor_container {
       background-color: #fff;
       padding-bottom: 88px;
       margin: 0 8%;
@@ -30,6 +29,7 @@
 
 
     .editorFeatures {
+
       &-container {
         padding-top: 34px;
         background-color: #f4f4f4;
@@ -72,15 +72,13 @@
       }
 
       &__sample {
-        height: 519px;
-        background: url("../img/Editor.png") no-repeat;
+        overflow: hidden;
       }
     }
   }
-}
 
-@media screen and (max-width: $tabletBreakPoint) {
-    .revolutionaryEditor {
+@media screen and (min-width: $tabletBreakPoint) {
+    .revolutionary-editor {
 
         .revolutionary-editor-container {
             margin: 0 50px;
@@ -127,121 +125,71 @@
     }
 }
 
-@media screen and (max-width: $desktopBreakPoint) {
-    .revolutionaryEditor {
+@media screen and (min-width: $desktopBreakPoint) {
+    .revolutionary-editor {
 
         .revolutionary-editor-container {
             padding-left: 90px;
         }
 
-
-        &__subtitle {
-            font-size: 16px;
-        }
         .editorFeatures {
 
             &-container {
-                display: grid;
-                grid-template-columns: 57% 1fr;
-                grid-template-rows: 75px 1fr;
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              align-content: space-between;
+              height: 677px;
             }
 
             &__title {
+                width: 49%;
                 order: 2;
-                justify-self: left;
-                font-size: 41px;
                 padding: 0;
             }
 
             &__sample {
-                order: 4;
-                overflow: hidden;
-                align-self: start;
+                width: 49%;
+                order: 3;
             }
 
             &__list {
-                grid-row: 1 / span 2;
-                margin: 0 37px 57px 30px;
+                width: 44%;
+                order: 1;
+                margin: 0 0 6% 4%;
                 display: grid;
                 grid-template-columns: minmax(60px, 111px) 1fr;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
                 grid-column-gap: 23px;
                 grid-row-gap: 60px;
-
-                &__img {
-                    margin-bottom: 0;
-                }
-                &__item {
-                    margin-bottom: 0;
-
-                    &__title {
-                        text-align: left;
-                    }
-
-                    &__text {
-                        text-align: left;
-                    }
-                }
             }
         }
     }
 }
 
 @media screen and (min-width: $retinaBreakPoint) {
-    .revolutionaryEditor {
-
-        .revolutionary-editor-container {
-            padding-left: 90px;
-        }
+    .revolutionary-editor {
 
 
-        &__subtitle {
-            font-size: 16px;
-        }
         .editorFeatures {
 
             &-container {
-                display: grid;
-                grid-template-columns: 57% 1fr;
-                grid-template-rows: 75px 1fr;
+              align-content: center;
             }
 
             &__title {
-                order: 2;
-                justify-self: left;
-                font-size: 41px;
-                padding: 0;
+              width: fit-content;
+              align-self: flex-start;
             }
 
             &__sample {
-                order: 4;
-                overflow: hidden;
-                align-self: start;
+              width: 51%;
             }
 
             &__list {
-                grid-row: 1 / span 2;
-                margin: 0 37px 57px 30px;
-                display: grid;
-                grid-template-columns: minmax(60px, 111px) 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-                grid-column-gap: 23px;
-                grid-row-gap: 60px;
+                width: 515px;
+                margin: 0 90px 6% 90px;
 
-                &__img {
-                    margin-bottom: 0;
-                }
-                &__item {
-                    margin-bottom: 0;
-
-                    &__title {
-                        text-align: left;
-                    }
-
-                    &__text {
-                        text-align: left;
-                    }
-                }
             }
         }
     }

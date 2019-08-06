@@ -1,4 +1,3 @@
-@media screen and (max-width: $mobileBreakPoint) {
   .outer-container {
     width: 100%;
     font-family: $fontMontserrat;
@@ -47,20 +46,6 @@
       @extend %burgerBarPosAbsolute;
       bottom: -7px;
     }
-  }
-
-  .purpleBtn {
-    padding: 12px 25px;
-    border-radius: 25px;
-    font-size: 13px;
-    font-weight: 700;
-    background-color: $purpleColor;
-    color: #fff;
-  }
-
-  .purpleBtn:hover {
-    background-color: #fff;
-    color: $purpleColor;
   }
 
   .navMenu {
@@ -132,34 +117,7 @@
     }
   }
 
-  .purpleBtn-download {
-    position: relative;
-    bottom: -403.5px;
-    width: 111.54%;
-    padding: 15px 0;
-    border: 1px solid $purpleColor;
-    border-radius: 30px;
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .purpleBtn-download:hover {
-    border: 1px solid $purpleColor;
-  }
-
-  .purpleBtn-download::after {
-    position: absolute;
-    left: 0;
-    bottom: -25px;
-    width: 100%;
-    content: "Unlimited 30-Days Trial Period";
-    font-size: 12px;
-    font-weight: 400;
-    color: #a5acb3;
-  }
-}
-
-@media screen and (max-width: $tabletBreakPoint){
+@media screen and (min-width: $tabletBreakPoint){
   .headerNavBar {
     padding: 22px 10px;
 
@@ -239,7 +197,7 @@
   }
 }
 
-@media screen and (max-width: $desktopBreakPoint){
+@media screen and (min-width: $desktopBreakPoint){
   .headerNavBar {
     flex-wrap: nowrap;
     padding: 30px 90px;
@@ -247,29 +205,10 @@
     &__logo {
       margin-right: 30%;
     }
-
-    &__logo::after {
-      content: "FORKIO";
-      padding-left: 60px;
-      font-size: 18px;
-      line-height: 41px;
-      font-weight: 700;
-      color: $purpleColor;
-    }
-
-    &__logo:hover::after {
-      color: #fff;
-    }
-
-    &__burgerMenuIcon {
-      display: none;
-    }
   }
 
   .purpleBtn {
     order: 3;
-    padding: 11px 35px;
-    border-radius: 25px;
     font-size: 16px;
   }
 
@@ -277,22 +216,9 @@
     order: 2;
     flex-basis: 46%;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
     &__item {
-      position: static;
-      padding: 0;
-      border-bottom: none;
       font-size: 16px;
-      font-weight: 700;
-      background-color: inherit;
-      color: $purpleColor;
-    }
-
-    &__item:hover {
-      color: #fff;
     }
   }
 
@@ -311,105 +237,16 @@
     &__version {
       font-size: 12px;
     }
-  }
-
-  .purpleBtn-download {
-    width: 390px;
-    padding: 23px 0;
-    position: relative;
-    bottom: -516px;
-    border-radius: 70px;
-  }
-
-  .purpleBtn-download::after {
-    font-size: 14px;
   }
 }
 
 @media screen and (min-width: $retinaBreakPoint){
   .headerNavBar {
-    flex-wrap: nowrap;
     width: 1180px;
     padding: 30px 10px;
-
-    &__logo {
-      margin-right: 30%;
-    }
-
-    &__logo::after {
-      content: "FORKIO";
-      padding-left: 60px;
-      font-size: 18px;
-      line-height: 41px;
-      font-weight: 700;
-      color: $purpleColor;
-    }
-
-    &__logo:hover::after {
-      color: #fff;
-    }
-
-    &__burgerMenuIcon {
-      display: none;
-    }
-  }
-
-  .purpleBtn {
-    order: 3;
-    padding: 11px 35px;
-    border-radius: 25px;
-    font-size: 16px;
-  }
-
-  .navMenu {
-    order: 2;
-    flex-basis: 46%;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    &__item {
-      position: static;
-      padding: 0;
-      border-bottom: none;
-      font-size: 16px;
-      font-weight: 700;
-      background-color: inherit;
-      color: $purpleColor;
-    }
-
-    &__item:hover {
-      color: #fff;
-    }
-  }
-
-  .headerAppDescription {
-    padding: 60px 320px/1380px*100% 485px;
-
-    &__appName {
-      font-size: 75px;
-    }
-
-    &__descr {
-      font-size: 22px;
-      line-height: inherit;
-    }
-
-    &__version {
-      font-size: 12px;
-    }
   }
 
   .purpleBtn-download {
-    width: 390px;
-    padding: 23px 0;
-    position: relative;
     bottom: -517px;
-    border-radius: 70px;
-  }
-
-  .purpleBtn-download::after {
-    font-size: 14px;
   }
 }
