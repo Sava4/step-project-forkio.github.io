@@ -29,6 +29,7 @@
 
 
     .editorFeatures {
+
       &-container {
         padding-top: 34px;
         background-color: #f4f4f4;
@@ -134,24 +135,28 @@
         .editorFeatures {
 
             &-container {
-                display: grid;
-                grid-template-columns: 57% 1fr;
-                grid-template-rows: 75px 1fr;
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              align-content: space-between;
+              height: 677px;
             }
 
             &__title {
+                width: 49%;
                 order: 2;
-                justify-self: left;
                 padding: 0;
             }
 
             &__sample {
-                order: 4;
+                width: 49%;
+                order: 3;
             }
 
             &__list {
-                grid-row: 1 / span 2;
-                margin: 0 37px 57px 30px;
+                width: 44%;
+                order: 1;
+                margin: 0 0 6% 4%;
                 display: grid;
                 grid-template-columns: minmax(60px, 111px) 1fr;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -169,19 +174,21 @@
         .editorFeatures {
 
             &-container {
-                display: grid;
-                grid-template-columns: 57% 1fr;
-                grid-template-rows: 75px 1fr;
+              align-content: center;
+            }
+
+            &__title {
+              width: fit-content;
+              align-self: flex-start;
+            }
+
+            &__sample {
+              width: 51%;
             }
 
             &__list {
-                grid-row: 1 / span 2;
-                margin: 0 37px 57px 30px;
-                display: grid;
-                grid-template-columns: minmax(60px, 111px) 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-                grid-column-gap: 23px;
-                grid-row-gap: 60px;
+                width: 515px;
+                margin: 0 90px 6% 90px;
 
             }
         }
