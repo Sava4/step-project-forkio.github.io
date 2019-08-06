@@ -1,0 +1,39 @@
+.purpleBtn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: $purpleColor;
+    color: #fff;
+  }
+
+.purpleBtn:hover {
+    background-color: #fff;
+    color: $purpleColor;
+  }
+
+.purpleBtn-download {
+    position: relative;
+    bottom: -403.5px;
+    width: 111.54%;
+    padding: 15px 0;
+    border: 1px solid $purpleColor;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+.purpleBtn-download:hover {
+    border: 1px solid $purpleColor;
+  }
+
+.purpleBtn-download::after {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 100%;
+    content: "Unlimited 30-Days Trial Period";
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5acb3;
+  }
